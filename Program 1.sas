@@ -5,3 +5,14 @@
  * Another line of code
  * And another
  */
+ 
+ 
+ 
+ 
+data _null_;
+  putlog "This does nothing I think";
+run;
+
+proc sort = sashelp.cars out = cars;
+  by make;
+quit;
